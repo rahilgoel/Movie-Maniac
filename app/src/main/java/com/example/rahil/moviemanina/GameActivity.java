@@ -122,7 +122,7 @@ public class GameActivity extends Activity {
         explosion4 = sp.load(this, R.raw.losing, 1);
         //get letter button grid
         bollywood = new ImageView[numParts];
-        bollywood[0] = (ImageView) findViewById(R.id.);
+        bollywood[0] = (ImageView) findViewById(R.id.m);
         bollywood[1] = (ImageView) findViewById(R.id.o);
         bollywood[2] = (ImageView) findViewById(R.id.v);
         bollywood[3] = (ImageView) findViewById(R.id.i);
@@ -274,11 +274,22 @@ public class GameActivity extends Activity {
             for (int k = 0; k < currWord.length(); k++) {
                 if (currWord.charAt(k) == 'A') {
                     numCorr++;
-
-
                 }
                 if (currWord.charAt(k) == 'E') {
                     numCorr++;
+
+                }
+                if (currWord.charAt(k) == '.') {
+                    numCorr++;
+
+
+                } if (currWord.charAt(k) == '!') {
+                    numCorr++;
+
+
+                } if (currWord.charAt(k) == '-') {
+                    numCorr++;
+
 
                 }
                 if (currWord.charAt(k) == 'I') {
@@ -318,6 +329,12 @@ public class GameActivity extends Activity {
 
 
                 if (currWord.charAt(c) == 'A') {
+                    charViews[c].setTextColor(Color.WHITE);
+                } if (currWord.charAt(c) == '!') {
+                    charViews[c].setTextColor(Color.WHITE);
+                } if (currWord.charAt(c) == '.') {
+                    charViews[c].setTextColor(Color.WHITE);
+                } if (currWord.charAt(c) == '-') {
                     charViews[c].setTextColor(Color.WHITE);
                 }
                 if (currWord.charAt(c) == 'E') {
@@ -360,6 +377,19 @@ public class GameActivity extends Activity {
 
             for (int k = 0; k < currWord.length(); k++) {
                 if (currWord.charAt(k) == 'A') {
+                    numCorr++;
+
+
+                }
+                if (currWord.charAt(k) == '.') {
+                    numCorr++;
+
+
+                } if (currWord.charAt(k) == '!') {
+                    numCorr++;
+
+
+                } if (currWord.charAt(k) == '-') {
                     numCorr++;
 
 

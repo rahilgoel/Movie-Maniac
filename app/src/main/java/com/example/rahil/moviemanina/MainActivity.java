@@ -64,8 +64,8 @@ public class MainActivity extends Activity {
                 anim2.reset();
                 ImageView iv2=(ImageView) findViewById(R.id.splash);
                 iv2.startAnimation(anim2);
-                ImageView iv3=(ImageView) findViewById(R.id.logo);
-                YoYo.with(Techniques.RotateIn).duration(1000).playOn(iv3);
+               // ImageView iv3=(ImageView) findViewById(R.id.logo);
+                //YoYo.with(Techniques.RotateIn).duration(1000).playOn(iv3);
                 //iv.clearAnimation();
                 //YoYo.with(Techniques.TakingOff).duration(4000).playOn(iv);
             }

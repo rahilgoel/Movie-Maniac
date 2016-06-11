@@ -113,16 +113,16 @@ CountDownTimer time;
     private void playGame()
 
     {
-        bollywood[0].setImageResource(R.drawable.m);
-        bollywood[1].setImageResource(R.drawable.o);
-        bollywood[2] .setImageResource(R.drawable.v);
+        bollywood[0].setImageResource(R.drawable.mw);
+        bollywood[1].setImageResource(R.drawable.ow);
+        bollywood[2] .setImageResource(R.drawable.vw);
         bollywood[3].setImageResource(R.drawable.i);
-        bollywood[4].setImageResource(R.drawable.e);
-        bollywood[5].setImageResource(R.drawable.m);
-        bollywood[6] .setImageResource(R.drawable.a);
-        bollywood[7].setImageResource(R.drawable.n);
+        bollywood[4].setImageResource(R.drawable.ew);
+        bollywood[5].setImageResource(R.drawable.mw);
+        bollywood[6] .setImageResource(R.drawable.aw);
+        bollywood[7].setImageResource(R.drawable.nw);
         bollywood[8] .setImageResource(R.drawable.i);
-        bollywood[9].setImageResource(R.drawable.a);
+        bollywood[9].setImageResource(R.drawable.aw);
 
         time=new CountDownTimer(200000, 1000) {
 
@@ -198,6 +198,17 @@ CountDownTimer time;
                     if (currWord.charAt(c) == 'A') {
                         charViews[c].setTextColor(Color.WHITE);
                     }
+
+                    if (currWord.charAt(c) == '!') {
+                        charViews[c].setTextColor(Color.WHITE);
+                    }
+
+                    if (currWord.charAt(c) == '-') {
+                        charViews[c].setTextColor(Color.WHITE);
+                    }
+                    if (currWord.charAt(c) == '.') {
+                        charViews[c].setTextColor(Color.WHITE);
+                    }
                     if (currWord.charAt(c) == 'E') {
                         charViews[c].setTextColor(Color.WHITE);
                     }
@@ -242,6 +253,16 @@ CountDownTimer time;
                     }
                     if (currWord.charAt(12 + d) == 'I') {
                         charViews2[d].setTextColor(Color.WHITE);
+                    }
+                    if (currWord.charAt(12+d) == '!') {
+                        charViews[d].setTextColor(Color.WHITE);
+                    }
+
+                    if (currWord.charAt(12+d) == '-') {
+                        charViews[d].setTextColor(Color.WHITE);
+                    }
+                    if (currWord.charAt(12+d) == '.') {
+                        charViews[d].setTextColor(Color.WHITE);
                     }
                     if (currWord.charAt(12 + d) == 'O') {
                         charViews2[d].setTextColor(Color.WHITE);
@@ -288,6 +309,19 @@ CountDownTimer time;
                         numCorr++;
 
                     }
+                    if (currWord.charAt(k) == '.') {
+                        numCorr++;
+
+
+                    } if (currWord.charAt(k) == '!') {
+                        numCorr++;
+
+
+                    } if (currWord.charAt(k) == '-') {
+                        numCorr++;
+
+
+                    }
                     if (currWord.charAt(k) == 'O') {
                         numCorr++;
 
@@ -319,6 +353,16 @@ CountDownTimer time;
                     charViews[c].setGravity(Gravity.CENTER);
                     charViews[c].setTextColor(0xF4C34D);
                     if (currWord.charAt(c) == 'A') {
+                        charViews[c].setTextColor(Color.WHITE);
+                    }
+                    if (currWord.charAt(c) == '!') {
+                        charViews[c].setTextColor(Color.WHITE);
+                    }
+
+                    if (currWord.charAt(c) == '-') {
+                        charViews[c].setTextColor(Color.WHITE);
+                    }
+                    if (currWord.charAt(c) == '.') {
                         charViews[c].setTextColor(Color.WHITE);
                     }
                     if (currWord.charAt(c) == 'E') {
@@ -357,6 +401,18 @@ CountDownTimer time;
 
                 for (int k = 0; k < currWord.length(); k++) {
                     if (currWord.charAt(k) == 'A') {
+                        numCorr++;
+
+
+                    } if (currWord.charAt(k) == '.') {
+                        numCorr++;
+
+
+                    } if (currWord.charAt(k) == '!') {
+                        numCorr++;
+
+
+                    } if (currWord.charAt(k) == '-') {
                         numCorr++;
 
 

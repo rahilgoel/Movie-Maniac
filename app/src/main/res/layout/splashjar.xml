@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/maniac"
+    android:background="#eee9c8"
 android:layout_gravity="center"
     android:id="@+id/lin_lay"
     android:gravity="center"
@@ -13,15 +13,13 @@ android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/splash"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/splash"
+        android:background="@drawable/backcircle"
         android:layout_centerHorizontal="true" />
-
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/logo"
-        android:background="@drawable/moviemaniaclogo"
+        android:background="@mipmap/logo"
         android:layout_alignTop="@+id/splash"
         android:layout_alignLeft="@+id/splash"
         android:layout_alignStart="@+id/splash" />
@@ -30,15 +28,8 @@ android:layout_gravity="center"
         android:layout_height="60dp"
         android:background="@drawable/movie_maniac_text"
         android:id="@+id/imageView2"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="180dp"
         android:layout_centerHorizontal="true" />
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:background="@drawable/jarstudio_logo_black"
-android:layout_marginBottom="74dp"
-        android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
